@@ -44,7 +44,7 @@
                                     <action selector="updateName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bPg-fe-BL9"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="nGO-K9-c88">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="nGO-K9-c88">
                                 <rect key="frame" x="101" y="176" width="118" height="31"/>
                                 <connections>
                                     <action selector="mySlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="sd5-gI-StB"/>
