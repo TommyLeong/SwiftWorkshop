@@ -11,15 +11,19 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
+    @IBAction func updateName(sender: AnyObject) {
+        myLabel.text=textField.text;
+        
+        //meaning become the first focus of the App. So keyboard will hide
+        textField.resignFirstResponder()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        myLabel.text = "Hello Tommy"
     }
 
 
