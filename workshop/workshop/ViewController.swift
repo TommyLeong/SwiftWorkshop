@@ -15,6 +15,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var lastName: UITextField!
+    
+    
+    @IBAction func combineName(sender: AnyObject) {
+        
+        myLabel.text = "My Name is: \(textField.text!) \(lastName.text!)"
+        print(myLabel.text)
+        
+    }
     
     @IBAction func mySlider(sender: AnyObject) {
         /*
