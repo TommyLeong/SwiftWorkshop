@@ -12,6 +12,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var slider: UISlider!
+    
+    @IBAction func mySlider(sender: UISlider) {
+        let currentValue = Int(sender.value)
+        myLabel.text = String(currentValue)
+    }
+    
     @IBAction func updateName(sender: AnyObject) {
         myLabel.text=textField.text;
         
