@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  swift
+//  workshop
 //
 //  Created by Tommy on 03/09/2016.
 //  Copyright © 2016 tommy. All rights reserved.
