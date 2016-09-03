@@ -10,13 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    //test commit
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var slider: UISlider!
     
-    @IBAction func mySlider(sender: UISlider) {
+    @IBAction func mySlider(sender: AnyObject) {
+        /*
+         --To use this 2 line, need to change AnyObject to UISlider
+         
         let currentValue = Int(sender.value)
         myLabel.text = String(currentValue)
+        */
+        
+        let sliderValue = Int(slider.value)
+        myLabel.text = "Value:  \(sliderValue)"
+        
     }
     
     @IBAction func updateName(sender: AnyObject) {
