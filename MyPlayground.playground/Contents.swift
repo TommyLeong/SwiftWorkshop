@@ -44,3 +44,10 @@ print("My name is \(name)")
 var abc = "My Name is: \("a") \("bc")"
 print(abc)
 
+
+//Array
+var names = ["Tommy", "King", 2]
+names.append(1)
+print(names)
+
+

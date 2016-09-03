@@ -20,7 +20,11 @@ class ViewController: UIViewController {
     
     @IBAction func combineName(sender: AnyObject) {
         
-        myLabel.text = "My Name is: \(textField.text!) \(lastName.text!)"
+        guard let abc = textField.text else{
+            return
+        }
+        myLabel.text = "My Name is: \(abc) \(lastName.text!)"
+        //myLabel.text = "My Name is: \(textField.text!) \(lastName.text!)"
         print(myLabel.text)
         
     }
@@ -49,7 +53,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.title = "Beginner"
+        
         myLabel.text = "Hello Changed"
+        textField.text = "HardCoded"
+        lastName.text = "Name"
+        
     }
 
 
